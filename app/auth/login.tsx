@@ -16,7 +16,7 @@ import { StatusBar } from 'expo-status-bar';
 import Colors from '@/constants/Colors';
 import Layout from '@/constants/Layout';
 import { useAuthStore } from '@/stores/authStore';
-import { Eye, EyeOff, ArrowRight, LogIn, Mail, Key } from 'lucide-react-native';
+import { Eye, EyeOff, ArrowRight, LogIn, User, Key } from 'lucide-react-native';
 import Animated, { 
   useSharedValue, 
   useAnimatedStyle, 
@@ -31,7 +31,7 @@ const isSmallScreen = width < 360;
 
 export default function LoginScreen() {
   const router = useRouter();
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [validationError, setValidationError] = useState('');
@@ -92,8 +92,8 @@ export default function LoginScreen() {
   }, [error, validationError]);
   
   const validateInputs = (): boolean => {
-    if (!email.trim()) {
-      setValidationError('Email is required');
+    if (!username.trim()) {
+      setValidationError('Username is required');
       return false;
     }
     
@@ -119,7 +119,7 @@ export default function LoginScreen() {
     }
     
     try {
-      const response = await signIn(email, password);
+      const response = await signIn(username, password);
       
       if (!response.error) {
         router.replace('/(tabs)');
@@ -156,13 +156,12 @@ export default function LoginScreen() {
           )}
           
           <View style={styles.inputContainer}>
-            <Mail size={20} color={Colors.light.subtext} style={styles.inputIcon} />
+            <User size={20} color={Colors.light.subtext} style={styles.inputIcon} />
             <TextInput
               style={styles.input}
-              placeholder="Email"
-              value={email}
-              onChangeText={setEmail}
-              keyboardType="email-address"
+              placeholder="Username"
+              value={username}
+              onChangeText={setUsername}
               autoCapitalize="none"
               placeholderTextColor={Colors.light.subtext}
             />

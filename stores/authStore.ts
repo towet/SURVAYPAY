@@ -22,11 +22,13 @@ interface AuthState {
   
   // Methods
   signUp: (email: string, password: string, username: string) => Promise<AuthResponse>;
-  signIn: (email: string, password: string) => Promise<AuthResponse>;
+  signIn: (username: string, password: string) => Promise<AuthResponse>;
   signOut: () => Promise<void>;
   resetPassword: (email: string) => Promise<{ data: {}; error: AuthError | null }>;
   loadUserProfile: () => Promise<void>;
   updateProfile: (updates: Partial<UserProfile>) => Promise<void>;
+  // Helper method to find user email by username
+  findEmailByUsername: (username: string) => Promise<string | null>;
 }
 
 export const useAuthStore = create<AuthState>((set, get) => ({
@@ -78,9 +80,40 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     }
   },
   
-  signIn: async (email: string, password: string) => {
+  // Helper method to find a user's email by their username
+  findEmailByUsername: async (username: string) => {
+    try {
+      // Query the profiles table to find the email associated with the username
+      const { data, error } = await supabase
+        .from('profiles')
+        .select('email')
+        .eq('username', username)
+        .single();
+
+      if (error || !data) {
+        console.error('Error finding email by username:', error);
+        return null;
+      }
+
+      return data.email;
+    } catch (error) {
+      console.error('Exception finding email by username:', error);
+      return null;
+    }
+  },
+
+  signIn: async (username: string, password: string) => {
     set({ isLoading: true, error: null });
     try {
+      // First find the email associated with this username
+      const email = await get().findEmailByUsername(username);
+      
+      if (!email) {
+        set({ error: 'Invalid username or password', isLoading: false });
+        return { data: {}, error: { message: 'Invalid username or password' } as AuthError } as unknown as AuthResponse;
+      }
+      
+      // Now sign in with the email and password
       const response = await supabase.auth.signInWithPassword({
         email,
         password,
