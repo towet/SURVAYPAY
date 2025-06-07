@@ -1,0 +1,36 @@
+[2025-05-22T10:14:03.258Z] {"action":"initiate_payment","payload":{"amount":200,"phone_number":"254702669633","channel_id":2253,"provider":"m-pesa","external_reference":"INV-1747908843258","description":"SurvayPay Account Activation","callback_url":"https://03f5-197-248-198-40.ngrok-free.app/api/payment-callback"},"timestamp":"2025-05-22T10:14:03.258Z"}
+[2025-05-22T10:14:14.347Z] {"action":"payment_response","externalReference":"INV-1747908843258","responseData":{"success":true,"status":"QUEUED","reference":"6b19-449d-830a-de849cbbf7202510271","CheckoutRequestID":"ws_CO_22052025131412770702669633"},"timestamp":"2025-05-22T10:14:14.347Z"}
+[2025-05-22T10:14:19.368Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:19.368Z"}
+[2025-05-22T10:14:20.003Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:20.003Z"}
+[2025-05-22T10:14:24.796Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:24.796Z"}
+[2025-05-22T10:14:25.084Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:25.084Z"}
+[2025-05-22T10:14:29.804Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:29.804Z"}
+[2025-05-22T10:14:30.071Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:30.071Z"}
+[2025-05-22T10:14:34.799Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:34.799Z"}
+[2025-05-22T10:14:35.110Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:35.110Z"}
+[2025-05-22T10:14:39.796Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:39.796Z"}
+[2025-05-22T10:14:39.959Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:39.959Z"}
+[2025-05-22T10:14:44.804Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:44.804Z"}
+[2025-05-22T10:14:44.966Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:44.966Z"}
+[2025-05-22T10:14:49.803Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:49.803Z"}
+[2025-05-22T10:14:50.101Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:50.101Z"}
+[2025-05-22T10:14:54.806Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:54.806Z"}
+[2025-05-22T10:14:54.969Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:14:54.969Z"}
+[2025-05-22T10:14:59.796Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:14:59.796Z"}
+[2025-05-22T10:15:00.211Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:15:00.211Z"}
+[2025-05-22T10:15:04.801Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:15:04.801Z"}
+[2025-05-22T10:15:04.959Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:15:04.959Z"}
+[2025-05-22T10:15:09.810Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:15:09.810Z"}
+[2025-05-22T10:15:09.982Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:15:09.982Z"}
+[2025-05-22T10:15:14.807Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:15:14.807Z"}
+[2025-05-22T10:15:14.967Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:15:14.967Z"}
+[2025-05-22T10:15:19.795Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:15:19.795Z"}
+[2025-05-22T10:15:19.959Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:15:19.959Z"}
+[2025-05-22T10:15:36.815Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:15:36.815Z"}
+[2025-05-22T10:15:37.658Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:15:37.658Z"}
+[2025-05-22T10:16:36.809Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:16:36.809Z"}
+[2025-05-22T10:16:37.707Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:16:37.707Z"}
+[2025-05-22T10:17:36.806Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:17:36.806Z"}
+[2025-05-22T10:17:37.338Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:17:37.338Z"}
+[2025-05-22T10:18:36.804Z] {"action":"check_status","reference":"INV-1747908843258","timestamp":"2025-05-22T10:18:36.804Z"}
+[2025-05-22T10:18:37.332Z] {"action":"status_error","reference":"INV-1747908843258","error":{"error_message":"Endpoint not found"},"timestamp":"2025-05-22T10:18:37.332Z"}

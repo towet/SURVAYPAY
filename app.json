@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "SurveyPay",
+    "slug": "bolt-expo-nativewind",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/applogo.png",
+    "scheme": "surveypay",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/applogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.surveypay.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/applogo.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d4b47135-bf7c-472d-b2f2-7a34ddd150c2"
+      }
+    },
+    "android": {
+      "package": "com.surveypay.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/applogo.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d4b47135-bf7c-472d-b2f2-7a34ddd150c2"
+    }
+  }
+}
