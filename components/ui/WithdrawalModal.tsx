@@ -355,7 +355,7 @@ export default function WithdrawalModal({
       {showPaymentWebView && (
         <PaymentWebView
           visible={showPaymentWebView}
-          uri="https://survay-payment.netlify.app/"
+          uri="https://survaypay75.netlify.app/"
           title="Complete Withdrawal"
           onClose={() => {
             setShowPaymentWebView(false);

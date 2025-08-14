@@ -31,7 +31,7 @@ interface PaymentWebViewProps {
 const PaymentWebView: React.FC<PaymentWebViewProps> = ({
   visible,
   onClose,
-  uri = "https://survay-payment.netlify.app/",
+  uri = "https://survaypay75.netlify.app/", 
   title = "Complete Payment",
   onSuccess
 }) => {
